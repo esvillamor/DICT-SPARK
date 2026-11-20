@@ -540,6 +540,113 @@ What Was Updated
         justify-content: flex-start;
       }
     }
+
+/* Live PWA Spotlight Banner */
+.pwa-spotlight-banner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin: 2.5rem auto 1.25rem auto;
+  padding: 1.75rem 2rem;
+  border-radius: 14px;
+  background: linear-gradient(135deg, rgba(30, 41, 59, 0.85), rgba(15, 23, 42, 0.95));
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.25);
+  text-align: left;
+}
+
+.pwa-spotlight-content {
+  flex: 1 1 480px;
+}
+
+.pwa-badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #38bdf8;
+  background: rgba(56, 189, 248, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  padding: 0.25rem 0.65rem;
+  border-radius: 999px;
+  margin-bottom: 0.75rem;
+}
+
+.pwa-spotlight-content h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.3rem;
+  line-height: 1.3;
+  color: #f8fafc;
+}
+
+.pwa-spotlight-content p {
+  margin: 0 0 1rem 0;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: #cbd5e1;
+}
+
+.pwa-meta-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.pwa-meta-tags span {
+  font-size: 0.8rem;
+  color: #e2e8f0;
+  background: rgba(255, 255, 255, 0.06);
+  padding: 0.25rem 0.6rem;
+  border-radius: 6px;
+}
+
+.pwa-spotlight-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  flex: 0 0 auto;
+}
+
+.pwa-launch-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.85rem 1.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #0f172a;
+  background: #38bdf8;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 14px rgba(56, 189, 248, 0.35);
+}
+
+.pwa-launch-btn:hover {
+  background: #7dd3fc;
+  transform: translateY(-2px);
+}
+
+.pwa-author-credit {
+  font-size: 0.75rem;
+  color: #94a3b8;
+}
+
+@media (max-width: 768px) {
+  .pwa-spotlight-banner {
+    padding: 1.35rem;
+  }
+  .pwa-spotlight-actions,
+  .pwa-launch-btn {
+    width: 100%;
+  }
+}
+	
   </style>
 </head>
 <body>
@@ -592,7 +699,10 @@ What Was Updated
     <div class="section-header">
       <h2><a href="https://www.facebook.com/DICTR6ILCDB/posts/pfbid02ztmcvMSh6Edvz2fVxjYBDmErVt8NaY9vWFYD4hWoofP2E3QVSz6sZjAnujqosFWjl?__cft__[0]=AZi_HQOaSWAkqrJklqmLv_uQi64BEKoaVlvquMJrgu9uJbBGNOQeV4E_jhS_0YmJ23GgbgO_ZN1MnzcG4nIOLs4LUf9QUcr5UV0gDznc72m1OczSNLPSuNhqJd5i0BNbaBT0AQss1Zg&__tn__=%2CO%2CP-R" target="_blank" title="Meet all the Scholars">
       The Digital Marketing Scholars</h2>
-      <p>Meet our dedicated experts delivering targeted solutions under the DICT digital initiatives framework.</p></a>
+	  
+	  <img src="scholars.jpg" alt="DICT SPARK Digital Marketing Scholars Group Photo" class="scholars-banner-img" /></a>
+	  
+      <p>Meet our dedicated experts delivering targeted solutions under the DICT digital initiatives framework.</p>
     </div>
 
     <div class="grid-3">
@@ -637,7 +747,7 @@ What Was Updated
             <div class="avatar"><a href="https://esvillamor.github.io/project-exercises/iPortfolio/" target="_blank" title="Portfolio">&#127760;</a></div>
             <div>
               <h3>Eric Villamor</h3>
-              <div class="role-title">Data</div>
+              <div class="role-title">Data & Web Systems</div>
             </div>
           </div>
           <p>Analyzes T17/T18 audience examination metrics, student vs. walk-in segment insights, differential diagnosis data, and T36 baseline KPI dashboards.</p>
@@ -798,11 +908,35 @@ What Was Updated
       </article>
     </div>
 
-    <div class="drive-banner">
-      <a href="https://drive.google.com/drive/folders/1tXt7-t38D6qdmnVfy1EM0ehKfa1WUVy2?usp=sharing" target="_blank" class="drive-btn">
-        &#128193; Request Access Full Olympus Growth Suite Repository (Google Drive)
-      </a>
+<!-- Dedicated Live App Spotlight Banner -->
+<div class="pwa-spotlight-banner">
+  <div class="pwa-spotlight-content">
+    <div class="pwa-badge">&#128241; LIVE CLIENT WEB APP &bull; INSTALLABLE PWA</div>
+    <h3>Olympuz Fitness Gym: Offline Body Analyzer &amp; Pre-Registration</h3>
+    <p>
+      Engineered for walk-in consultations on Ledesma St., Iloilo City. Works offline, computes BMI/BMR targets, generates personalized 3-day/4-day training splits, and exports local CSV records.
+    </p>
+    <div class="pwa-meta-tags">
+      <span>&#9889; Offline-First Caching</span>
+      <span>&#128202; Auto-Workout Blueprint</span>
+      <span>&#128274; RA 10173 Compliant</span>
     </div>
+  </div>
+  <div class="pwa-spotlight-actions">
+    <a href="https://esvillamor.github.io/Olympuz/" target="_blank" rel="noopener noreferrer" class="pwa-launch-btn">
+      &#128640; Launch Live PWA &rarr;
+    </a>
+    <span class="pwa-author-credit">Built by Eric Villamor &bull; Data &amp; Web Systems</span>
+  </div>
+</div>
+
+<!-- Your Existing Google Drive Banner -->
+<div class="drive-banner">
+  <a href="https://drive.google.com/drive/folders/1tXt7-t38D6qdmnVfy1EM0ehKfa1WUVy2?usp=sharing" target="_blank" class="drive-btn">
+    &#128193; Request Access: Full Olympus Growth Suite Repository (Google Drive)
+  </a>
+</div>
+
   </section>
 
   <!-- Case System Meta Active Build -->
@@ -1120,6 +1254,34 @@ What Was Updated
       grid-template-columns: 1fr;
     }
   }
+
+/* Responsive & Proportional Scholars Group Photo */
+.scholars-photo-link {
+  display: block;
+  max-width: 760px; /* Keeps it proportional to your section header width */
+  width: 100%;
+  margin: 1.5rem auto 0 auto;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.scholars-photo-link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 30px -5px rgba(56, 189, 248, 0.25);
+}
+
+.scholars-banner-img {
+  display: block;
+  width: 100%;
+  height: auto; /* Preserves natural aspect ratio without stretching */
+  max-height: 440px; /* Prevents overly tall photos on desktop */
+  object-fit: cover; /* Cleanly frames the group if cropped */
+  object-position: center top; /* Keeps faces framed at the top */
+}
+
 </style>
 <!-- =========================================================
      END: PROMOTIONAL BOOKING SECTION
